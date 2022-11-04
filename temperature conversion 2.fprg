@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22069"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 09:37:42 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTExLTA0OzA5OjI2OjAyIEFNOzMwNjM="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTExLTA0OzA5OjM3OjQyIEFNOzIwOzMyMjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="frhnt, cel" type="Real" array="False" size=""/>
+            <output expression="&quot;enter the value of frhnt&quot;" newline="True"/>
+            <input variable="frhnt"/>
+            <assign variable="cel" expression="frhnt*5/9-32"/>
+            <output expression="&quot;required tempertaure in cel&quot; &amp;cel" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

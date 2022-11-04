@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22069"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:39:39 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTExLTA0OzEwOjA2OjA3IEFNOzMwNTg="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTExLTA0OzEwOjM5OjM5IEFNOzI7MzE3OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="enter the dividend"/>
+            <declare name="dividend" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the number to be dividend&quot;" newline="True"/>
+            <input variable="dividend"/>
+            <comment text="enter the divisor"/>
+            <declare name="divisor" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the number to be divisor&quot;" newline="True"/>
+            <input variable="divisor"/>
+            <comment text="enter the quotient"/>
+            <declare name="quotient" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the number to be quotient&quot;" newline="True"/>
+            <input variable="quotient"/>
+            <assign variable="quotient" expression="dividend/divisor"/>
+            <comment text="after inputing all the three things we will get the modulas"/>
+            <declare name="modulas" type="Integer" array="False" size=""/>
+            <assign variable="modulas" expression="quotient*(dividend/divisor)"/>
+            <output expression="&quot;the modulas is&quot; &amp;modulas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

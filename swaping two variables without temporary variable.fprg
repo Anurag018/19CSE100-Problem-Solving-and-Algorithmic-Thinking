@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22069"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:05:36 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTExLTA0OzA5OjUyOjE2IEFNOzMwNjc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTExLTA0OzEwOjA1OjM2IEFNOzI7MzE2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="enter the two numbers"/>
+            <declare name="num1, num2" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the value num1&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;enter the num2&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="num1" expression="num1+num2"/>
+            <assign variable="num2" expression="num1-num2"/>
+            <assign variable="num1" expression="num1-num2"/>
+            <comment text="the numbers will be swaped "/>
+            <output expression="&quot;rslt num1&quot; &amp;num1" newline="True"/>
+            <output expression="&quot;rslt num2&quot; &amp;num2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
