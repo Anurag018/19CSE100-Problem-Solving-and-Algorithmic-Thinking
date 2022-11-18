@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22069"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 10:31:06 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTExLTE4OzA5OjA0OjAwIEFNOzMzMTg="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTExLTE4OzEwOjMxOjA2IEFNOzE7MzQyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your account number&quot;" newline="True"/>
+            <input variable="A"/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <assign variable="B" expression="1000"/>
+            <output expression="&quot;Your bank balance is&quot;&amp;B" newline="True"/>
+            <declare name="P" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter your 4 digit security pin&quot;" newline="True"/>
+            <input variable="P"/>
+            <if expression="P=0018">
+                <then>
+                    <declare name="RA" type="Integer" array="False" size=""/>
+                    <output expression="&quot;Enter the required amount&quot;" newline="True"/>
+                    <input variable="RA"/>
+                    <if expression="B&gt;750">
+                        <then>
+                            <output expression="&quot;CASH IS BEING DISPENDED&quot;" newline="True"/>
+                            <declare name="RB" type="Integer" array="False" size=""/>
+                            <assign variable="RB" expression="B-RA"/>
+                            <output expression="&quot;YOUR CURRENT ACCOUNT BALANCE IS&quot; &amp;RB" newline="True"/>
+                            <if expression="RB&lt;500">
+                                <then>
+                                    <output expression="&quot;WARNING FUNDS IN YOUR ACOUNT ARE LESS THAN 500&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;SORRY INSUFFIECIENT BALANCE IN YOUR ACOUNT &quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;PlEASE ENTER THE CORRECT PIN&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
