@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="anura"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 11:54:51 AM"/>
+        <attribute name="created" value="YW51cmE7QU5VUkFHUkVERFk7MjAyMi0xMi0wMjsxMTo0NDoxNCBBTTsyNjEy"/>
+        <attribute name="edited" value="YW51cmE7QU5VUkFHUkVERFk7MjAyMi0xMi0wMjsxMTo1NDo1MSBBTTsxOzI3MjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, s, j, x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter the value of n&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="x" expression="1"/>
+            <output expression="i" newline="True"/>
+            <output expression="x" newline="True"/>
+            <assign variable="s" expression="0"/>
+            <assign variable="j" expression="3"/>
+            <while expression="j&lt;=n">
+                <assign variable="s" expression="x+i"/>
+                <output expression="s" newline="True"/>
+                <assign variable="i" expression="x"/>
+                <assign variable="x" expression="s"/>
+                <assign variable="j" expression="j+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
