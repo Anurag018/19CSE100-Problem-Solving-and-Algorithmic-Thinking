@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22069"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:24:06 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTEyLTAyOzEwOjAxOjI0IEFNOzMzMDc="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTEyLTAyOzEwOjAzOjQ5IEFNOzE7Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTEyLTAyOzA5OjM5OjQ2IEFNOzY4MTM="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTEyLTAyOzEwOjI0OjA2IEFNOzI7MzQyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, Sum" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number for which addition table is needed &quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;Addition table for 1&quot;" newline="True"/>
+            <for variable="i" start="1 " end="10" direction="inc" step="1">
+                <output expression="&quot;addition table of&quot; &amp;i &amp;&quot;is&quot;" newline="True"/>
+                <for variable="n" start="1" end="10" direction="inc" step="1">
+                    <assign variable="Sum" expression="n+i"/>
+                    <output expression="n&amp;&quot;+&quot;&amp;i&amp;&quot;=&quot;&amp;(n+i)" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

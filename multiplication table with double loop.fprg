@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22069"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:26:06 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTEyLTAyOzA5OjM5OjQ2IEFNOzMzMzA="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTEyLTAyOzEwOjI0OjM5IEFNOzE7Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTEyLTAyOzEwOjAxOjI0IEFNO0FkZGl0aW9uIHRhYmxlIHdpdGggZG91YmxlIGxvb3AuZnByZzsxMDMwOQ=="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTEyLTAyOzEwOjI2OjA2IEFNOzI7MzQyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declare the variables"/>
+            <declare name="i, c, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your number&quot;" newline="True"/>
+            <input variable="n"/>
+            <comment text="Assign the value less than 10"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=10">
+                <output expression="&quot;addition table of&quot; &amp;i &amp;&quot;is&quot;" newline="True"/>
+                <for variable="n" start="1" end="10" direction="inc" step="1">
+                    <assign variable="c" expression="n*i"/>
+                    <output expression="n&amp;&quot;*&quot;&amp;i&amp;&quot;=&quot;&amp;c" newline="True"/>
+                    <assign variable="i" expression="i+1"/>
+                </for>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
