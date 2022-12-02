@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22069"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:58:35 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTEyLTAyOzA5OjM5OjQ2IEFNOzMzMzA="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTEyLTAyOzA5OjU4OjM1IEFNOzE7MzQzNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declare the variables"/>
+            <declare name="i, c, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your number&quot;" newline="True"/>
+            <input variable="n"/>
+            <comment text="Assign the value less than 10"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=10">
+                <assign variable="c" expression="n*i"/>
+                <output expression="n&amp;&quot;*&quot;&amp;i&amp;&quot;=&quot;&amp;c" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22069"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:39:16 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTEyLTAyOzA5OjIxOjEyIEFNOzMzMTQ="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTEyLTAyOzA5OjM5OjE2IEFNOzE7MzQzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, a, f" type="Integer" array="False" size=""/>
+            <assign variable="f" expression="1"/>
+            <output expression="&quot;Please enter the value of a&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="a" start="1" end="n" direction="inc" step="1">
+                <assign variable="f" expression="f*a"/>
+            </for>
+            <output expression="&quot;Factorial is&quot; &amp;f" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

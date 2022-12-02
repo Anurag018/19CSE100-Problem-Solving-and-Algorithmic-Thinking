@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22069"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:16:58 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTEyLTAyOzA5OjE0OjAzIEFNOzMzMTY="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDEwNjsyMDIyLTEyLTAyOzA5OjE2OjU4IEFNOzI7MzQzNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Initiate"/>
+            <declare name="n, a" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="1"/>
+            <comment text="Test"/>
+            <output expression="&quot;Please enter the value of a&quot;" newline="True"/>
+            <input variable="a"/>
+            <while expression="n&lt;=a">
+                <comment text="Alter"/>
+                <output expression="n" newline="True"/>
+                <assign variable="n" expression="n+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
