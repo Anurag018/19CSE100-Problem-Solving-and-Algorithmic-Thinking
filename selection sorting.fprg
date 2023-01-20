@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22069"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 10:41:26 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDAzODsyMDIzLTAxLTIwOzA5OjQ4OjU2IEFNOzMzMzQ="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2OTsyMDIyMjNNQVlDMDAzODsyMDIzLTAxLTIwOzEwOjQxOjI2IEFNOzE7MzQyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, n, min, x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of elements&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <output expression="&quot;Enter the array elements&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <assign variable="x" expression="0"/>
+            <for variable="i" start="0" end="n-2" direction="inc" step="1">
+                <assign variable="min" expression="1"/>
+                <for variable="j" start="1" end="n-1" direction="inc" step="1">
+                    <if expression="a[i]&lt;a[min]">
+                        <then>
+                            <assign variable="min" expression="j"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <assign variable="x" expression="a[min]"/>
+                <assign variable="a[min]" expression="a[i]"/>
+                <assign variable="a[i]" expression="x"/>
+            </for>
+            <for variable="i" start="1" end="n-1" direction="inc" step="1">
+                <output expression="a[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
