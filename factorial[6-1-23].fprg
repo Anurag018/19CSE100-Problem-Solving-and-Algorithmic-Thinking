@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="anura"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-06 10:27:45 PM"/>
+        <attribute name="created" value="YW51cmE7QU5VUkFHUkVERFk7MjAyMy0wMS0wNjswOToyNDozNSBQTTsyNjM4"/>
+        <attribute name="edited" value="YW51cmE7QU5VUkFHUkVERFk7MjAyMy0wMS0wNjsxMDoyNzo0NSBQTTsxOzI3NDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, factorial" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number for which the factorial to be found &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="factorial" expression="fact(n)"/>
+            <output expression="&quot;Factorial of the given number is&quot; &amp;factorial" newline="True"/>
+        </body>
+    </function>
+    <function name="fact" type="Integer" variable="ans">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="ans" type="Integer" array="False" size=""/>
+            <declare name="prod, i" type="Integer" array="False" size=""/>
+            <assign variable="prod" expression="1"/>
+            <for variable="i" start="a" end="t" direction="dec" step="1">
+                <assign variable="prod" expression="prod*i"/>
+            </for>
+            <assign variable="ans" expression="prod"/>
+        </body>
+    </function>
+</flowgorithm>
